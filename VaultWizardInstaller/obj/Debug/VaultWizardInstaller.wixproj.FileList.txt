@@ -1,0 +1,12 @@
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.msi
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.wixpdb
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\VaultPluginWizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.msi
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\VaultPluginWizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.wixpdb
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\VaultPluginWizard\Autodesk-Vault-Plugin-Wizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.msi
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\VaultPluginWizard\Autodesk-Vault-Plugin-Wizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.wixpdb
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.msi
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\VaultWizardInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\VaultWizardInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\VaultWizardInstaller.wixproj.BindBuiltOutputsFileListnull.txt

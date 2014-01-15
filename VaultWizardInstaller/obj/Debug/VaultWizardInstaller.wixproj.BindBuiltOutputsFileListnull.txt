@@ -1,0 +1,2 @@
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.msi
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizard\VaultWizardInstaller\bin\Debug\VaultWizardInstaller.wixpdb

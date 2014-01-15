@@ -1,0 +1,5 @@
+C:\Users\duda\Documents\AutoCAD-Net-Wizards\XmlConfigurator2010\bin\Release\XmlConfigurator.dll
+C:\Users\duda\Documents\AutoCAD-Net-Wizards\XmlConfigurator2010\obj\Release\XmlConfigurator.csprojResolveAssemblyReference.cache
+C:\Users\duda\Documents\AutoCAD-Net-Wizards\XmlConfigurator2010\obj\Release\XmlConfigurator.XmlConfigElt.resources
+C:\Users\duda\Documents\AutoCAD-Net-Wizards\XmlConfigurator2010\obj\Release\XmlConfigurator.csproj.GenerateResource.Cache
+C:\Users\duda\Documents\AutoCAD-Net-Wizards\XmlConfigurator2010\obj\Release\XmlConfigurator.dll

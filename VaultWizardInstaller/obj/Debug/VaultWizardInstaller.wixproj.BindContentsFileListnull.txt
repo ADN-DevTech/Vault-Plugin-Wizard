@@ -1,0 +1,10 @@
+..\Output\VaultPluginCSharp.zip
+..\Output\VaultPluginVb.zip
+..\Output\VaultPluginCSharp.zip
+..\Output\VaultPluginVb.zip
+..\Output\VaultPluginCSharp.zip
+..\Output\VaultPluginVb.zip
+..\Output\VaultPluginCSharp.zip
+..\Output\VaultPluginVb.zip
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizard\Wizard\bin\Debug\VaultPluginWizard.dll
+C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizard\XmlConfigurator2010\bin\Debug\XmlConfigurator.dll
