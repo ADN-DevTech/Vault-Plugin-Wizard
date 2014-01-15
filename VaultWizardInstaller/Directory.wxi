@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// Copyright (c) Autodesk, Inc. All rights reserved 
+// Written by Daniel Du 2014 - ADN/Developer Technical Services
+//
+// Permission to use, copy, modify, and distribute this software in
+// object code form for any purpose and without fee is hereby granted, 
+// provided that the above copyright notice appears in all copies and 
+// that both that copyright notice and the limited warranty and
+// restricted rights notice below appear in all supporting 
+// documentation.
+//
+// AUTODESK PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS. 
+// AUTODESK SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+// MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC. 
+// DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+// UNINTERRUPTED OR ERROR FREE.
+-->
+
+<Include  xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!-- TODO: Put your code here. -->
+  <Directory Id="TARGETDIR" Name="SourceDir">
+    
+    <Directory Id="GAC" SourceName="Global Assembly Cache Folder">
+      <Component Id="C__WizardAssemblyInGAC" Guid="{cc80ca5b-dbde-4cb0-9ef8-8faf83c92b56}">
+        <File Id="F__WizardAssebly" Assembly=".net" KeyPath="yes" Hidden="no"
+              AssemblyManifest="F__WizardAssebly" Vital="yes" DiskId="1"
+              Source="$(var.VaultPluginWizard.TargetPath)"></File>
+      </Component>
+
+      <Component Id="C__XmlConfiguratorAssemblyInGAC" Guid="{97db310f-337a-4b05-bdfe-1e907b16d179}">
+        <File Id="F__XmlConfigurator" Assembly=".net" KeyPath="yes" Hidden="no" 
+              AssemblyManifest="F__XmlConfigurator" Vital="yes" DiskId="1" 
+              Source="$(var.XmlConfigurator.TargetPath)"></File>
+              
+      </Component>
+    </Directory>
+
+    <!-- Visual Studio 2012 -->
+    <Directory Id="VS2012_PROJECT">
+      <Directory Id="D__VS2012_CSharp" Name="Visual C#">
+        <Directory Id="D__VS2012_CSharp_CompanyName" Name="Autodesk">
+          <Component Id="C__VS2012_CSharp_PluginTemplate" Guid="{af221400-c0ef-4a1e-a9a3-4928f31a745a}" KeyPath="yes">
+            <Condition><![CDATA[VS2012_PROJECT AND VS2012_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VS2012_CSharp_PluginTemplate" Name="VaultPluginCSharp2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginCSharp.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+
+      <Directory Id="D__VS2012_VB" Name="Visual Basic">
+        <Directory Id="D__VS2012_VB_CompanyName" Name="Autodesk">
+          <Component Id="C__VS2012_VB_PluginTemplate" Guid="{582f36ba-87a5-41f1-a243-4ab518a54efa}" KeyPath="yes">
+            <Condition><![CDATA[VS2012_PROJECT AND VS2012_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VS2012_VB_PluginTemplate" Name="VaultPluginVB2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginVb.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <!-- Visual Studio 2012 Express for Desktop -->
+    <Directory Id="VD2012_PROJECT">
+      <Directory Id="D__VD2012_CSharp" Name="Visual C#">
+        <Directory Id="D__VD2012_CSharp_CompanyName" Name="Autodesk">
+          <Component Id="C__VD2012_CSharp_PluginTemplate" Guid="{8812bc4b-547c-465f-a094-426a8282c399}" KeyPath="yes">
+            <Condition><![CDATA[VSD012_PROJECT AND VD2012_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VD2012_CSharp_PluginTemplate" Name="VaultPluginCSharp2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginCSharp.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+
+      <Directory Id="D__VD2012_VB" Name="Visual Basic">
+        <Directory Id="D__VD2012_VB_CompanyName" Name="Autodesk">
+          <Component Id="C__VD2012_VB_PluginTemplate" Guid="{2c6f43ac-4399-478a-9988-9be12f7f2683}" KeyPath="yes">
+            <Condition><![CDATA[VD2012_PROJECT AND VD2012_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VD2012_VB_PluginTemplate" Name="VaultPluginVB2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginVb.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <!-- VS2013 Pro-->
+    <Directory Id="VS2013_PROJECT">
+      <Directory Id="D__VS2013_CSharp" Name="Visual C#">
+        <Directory Id="D__VS2013_CSharp_CompanyName" Name="Autodesk">
+          <Component Id="C__VS2013_CSharp_PluginTemplate" Guid="{3a19998f-3180-4a39-8455-f962124b788a}" KeyPath="yes">
+            <Condition><![CDATA[VS2013_PROJECT AND VS2013_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VS2013_CSharp_PluginTemplate" Name="VaultPluginCSharp2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginCSharp.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+
+      <Directory Id="D__VS2013_VB" Name="Visual Basic">
+        <Directory Id="D__VS2013_VB_CompanyName" Name="Autodesk">
+          <Component Id="C__VS2013_VB_PluginTemplate" Guid="{79107462-87de-4f59-85b0-984bf6d90d39}" KeyPath="yes">
+            <Condition><![CDATA[VS2013_PROJECT AND VS2013_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VS2013_VB_PluginTemplate" Name="VaultPluginVB2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginVb.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+    
+    <!--TODO: Add VS2013 Express for Desktop-->
+    <Directory Id="VD2013_PROJECT">
+      <Directory Id="D__VD2013_CSharp" Name="Visual C#">
+        <Directory Id="D__VD2013_CSharp_CompanyName" Name="Autodesk">
+          <Component Id="C__VD2013_CSharp_PluginTemplate" Guid="{c6c6c19d-0ba4-4d22-aa18-483103f0ef3e}" KeyPath="yes">
+            <Condition><![CDATA[VD2013_PROJECT AND VD2013_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VD2013_CSharp_PluginTemplate" Name="VaultPluginCSharp2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginCSharp.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+
+      <Directory Id="D__VD2013_VB" Name="Visual Basic">
+        <Directory Id="D__VD2013_VB_CompanyName" Name="Autodesk">
+          <Component Id="C__VD2013_VB_PluginTemplate" Guid="{b46ad476-7f8f-4829-95a0-5908e836229a}" KeyPath="yes">
+            <Condition><![CDATA[VD2013_PROJECT AND VD2013_PROJECT <> TARGETDIR]]></Condition>
+            <File Id="F__VD2013_VB_PluginTemplate" Name="VaultPluginVB2014.zip" Vital="yes" DiskId="1" Source="..\Output\VaultPluginVb.zip"></File>
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+    
+  </Directory>
+  
+</Include>

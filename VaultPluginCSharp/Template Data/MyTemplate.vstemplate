@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>VaultPluginCSharp</Name>
+    <Description>A vault plugin template in CSharp</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+    <MaxFrameworkVersion>4.0</MaxFrameworkVersion>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>VaultPluginCSharp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.jpg</Icon>
+    <PreviewImage>__PreviewImage.jpg</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="VaultPluginCSharp.csproj" File="VaultPluginCSharp.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Class1.cs">Class1.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="vaultplugin.vcet.config">vaultplugin.vcet.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>
+      vaultpluginwizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=24c5f6423fce5909, processorArchitecture=MSIL
+    </Assembly>
+    <FullClassName>VaultPluginWizard.VaultPluginWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

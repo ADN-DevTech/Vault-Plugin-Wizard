@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+// Copyright (c) Autodesk, Inc. All rights reserved 
+// Written by Daniel Du 2014 - ADN/Developer Technical Services
+//
+// Permission to use, copy, modify, and distribute this software in
+// object code form for any purpose and without fee is hereby granted, 
+// provided that the above copyright notice appears in all copies and 
+// that both that copyright notice and the limited warranty and
+// restricted rights notice below appear in all supporting 
+// documentation.
+//
+// AUTODESK PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS. 
+// AUTODESK SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+// MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC. 
+// DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+// UNINTERRUPTED OR ERROR FREE.
+-->
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="VaultWizardInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Autodesk" UpgradeCode="d61f51ce-989d-4895-94b4-a35a09c0c0f7">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    
+    <Media Id="1" Cabinet="VaultPluginWizard.cab" EmbedCab="yes" CompressionLevel="high" VolumeLabel="DISK #1"/>
+    <Icon Id="VaultPluginWizard.jpg" SourceFile="..\Output\VaultPluginCSharp\__TemplateIcon.JPG"/>
+
+
+    <?include Directory.wxi ?>
+    <?include property.wxi?>
+    
+    
+    <Feature Id="ProductFeature" Title="VaultWizardInstaller" Level="1">
+      <!--GAC assemblies-->
+      <ComponentRef Id="C__WizardAssemblyInGAC" Primary="yes" />
+      <ComponentRef Id="C__XmlConfiguratorAssemblyInGAC" Primary="yes"/>
+      <!--VS2012 Pro/Express for Desktop Templates-->
+      <ComponentRef Id="C__VS2012_CSharp_PluginTemplate"/>
+      <ComponentRef Id="C__VS2012_VB_PluginTemplate"/>
+      <ComponentRef Id="C__VD2012_CSharp_PluginTemplate"/>
+      <ComponentRef Id="C__VD2012_VB_PluginTemplate"/>
+
+      <ComponentRef Id="C__VS2013_CSharp_PluginTemplate"/>
+      <ComponentRef Id="C__VS2013_VB_PluginTemplate"/>
+      <ComponentRef Id="C__VD2013_CSharp_PluginTemplate"/>
+      <ComponentRef Id="C__VD2013_VB_PluginTemplate"/>
+    </Feature>
+
+
+    <PropertyRef Id="NETFRAMEWORK40FULL"/>
+    <PropertyRef Id="NETFRAMEWORK45"/>
+    <Condition Message="Microsoft Visual Studio Pro/Premium/Ultimate 2012/2013 or Visual Express Edition 2012/2013 must be present on the target machine.">
+      <![CDATA[VS2012_PRO OR VCS2012_EXPRESS OR VB2012_EXPRESS OR VD2012_EXPRESS OR VS2013_PRO OR VCS2013_EXPRESS OR VB2013_EXPRESS OR VD2013_EXPRESS]]>
+    </Condition>
+
+    <!--Installer UI-->
+    <UIRef Id="WixUI_Minimal"/>
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf"/>
+    
+  </Product>
+
+
+
+</Wix>
