@@ -1,7 +1,0 @@
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\obj\Debug\SdkLocator.csprojResolveAssemblyReference.cache
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\bin\Debug\SdkLocator.dll
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\bin\Debug\SdkLocator.pdb
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\obj\Debug\SdkLocator.dll
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\obj\Debug\SdkLocator.pdb
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\obj\Debug\SdkLocator.SdkLocationForm.resources
-C:\Users\duda\Documents\GitHub\Vault-Plugin-Wizards\SdkLocator\SdkLocator\obj\Debug\SdkLocator.csproj.GenerateResource.Cache
