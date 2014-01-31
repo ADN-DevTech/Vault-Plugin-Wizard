@@ -1,6 +1,6 @@
 Copyright (c) Autodesk, Inc. All rights reserved 
 
-Autodesk Exchange IPN Listener Sample
+Autodesk Vault Plug-in Wizards
 by Daniel Du - Autodesk Developer Network (ADN)
 January 2014
 
